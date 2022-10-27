@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+{{movie.id}}
+<br>
+<div class="container">
+
+    <div class="row">
+
+
+    <div class="col-md-6">
+        <img src="{{movie.img.url}}" width="300" height="500" >
+    </div>
+    <div class="col-md-6">
+
+    <h1 style="color: white">{{movie.name}}<br></h1>
+    <p class="n1">{{movie.desc}}<br></p>
+        <h3 style="color: white">{{movie.year}}<br></h3>
+
+
+<a  class="btn btn-warning" href="{% url 'webapp:update' movie.id %}">update</a>
+<a  class="btn btn-danger" href="{% url 'webapp:delete' movie.id %}">delete</a>
+
+    </div>
+</div>
+</div>
+
+{% endblock %}
