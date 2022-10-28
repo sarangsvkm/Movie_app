@@ -22,3 +22,7 @@ text-align: center;
     transform: rotateY(360deg)
   }
 }
+.p3{
+flex-wrap:wrap;
+margin-bottom:auto;
+}
