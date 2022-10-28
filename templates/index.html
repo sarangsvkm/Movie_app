@@ -13,7 +13,7 @@
         {% for i in object1 %}
         <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="{{i.img.url}}" alt="Card image cap" width="150">
+                    <img class="card-img-top" src="{{i.img.url}}" alt="Card image cap" width="150px" height="350px">
                     <div class="card-body">
                         <h5 class="card-title">{{i.name}}</h5>
                         <a href="{% url  'webapp:details' i.id %}" class="btn btn-primary" style="align-item: center">MORE</a>
